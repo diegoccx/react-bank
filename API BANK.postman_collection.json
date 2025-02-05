@@ -1,0 +1,122 @@
+{
+	"info": {
+		"_postman_id": "1095a3eb-b39e-44b6-be01-647536380941",
+		"name": "API BANK",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "22555350"
+	},
+	"item": [
+		{
+			"name": "http://localhost:3001/historico/Nubank",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3001/historico/Nubank",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"historico",
+						"Nubank"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3001/historico/adicionar",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": " {\r\n       \r\n        \"bank\": \"Nubank\",\r\n        \"time\": \"13:05\",\r\n        \"name\": \"Kalzone Com Morango\",\r\n        \"amount\": 32.9,\r\n        \"color\": \"red\",\r\n        \"icon\": \"restaurant\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3001/historico/adicionar",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"historico",
+						"adicionar"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3001/historico/deletar/1",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3001/historico/deletar/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"historico",
+						"deletar",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3001/historico/alterar/35",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": " {\r\n        \r\n        \"bank\": \"Nubank\",\r\n        \"time\": \"15:45\",\r\n        \"name\": \"Açaí com Morango e Granola\",\r\n        \"amount\": 18.5,\r\n        \"color\": \"purple\",\r\n        \"icon\": \"icecream\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3001/historico/alterar/35",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"historico",
+						"alterar",
+						"35"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

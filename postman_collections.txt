@@ -1,0 +1,32 @@
+POSTMAN CHAMADAS
+
+GET  http://localhost:3001/historico/Nubank
+
+POST http://localhost:3001/historico/adicionar
+
+{
+       
+        "bank": "Nubank",
+        "time": "13:05",
+        "name": "Kalzone Com Morango",
+        "amount": 32.9,
+        "color": "red",
+        "icon": "restaurant"
+    }
+	
+	
+DELETE http://localhost:3001/historico/deletar/1
+
+
+ALTERAR
+PUT http://localhost:3001/historico/alterar/35
+
+{
+        
+        "bank": "Nubank",
+        "time": "15:45",
+        "name": "Açaí com Morango e Granola",
+        "amount": 18.5,
+        "color": "purple",
+        "icon": "icecream"
+    }
